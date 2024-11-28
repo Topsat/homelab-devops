@@ -4,9 +4,9 @@
   gather_facts: false
   become: true
   vars:
-    user: bob
+    user: rei
   tasks:
-    - name: Make bob sudoers
+    - name: Make rei sudoers
       community.general.sudoers:
         name: "{{ user }}"
         user: "{{ user }}"
@@ -21,4 +21,4 @@
       vars:
         sshd_allowagentforwarding: "yes"
         sshd_allowtcpforwarding: "yes"
-        sshd_allowusers: bob
+        sshd_allowusers: rei

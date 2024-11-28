@@ -5,7 +5,7 @@
   gather_facts: false
   become: true
   vars:
-    user: bob
+    user: rei
     devops_tools:
       - { name: direnv, version: 2.33.0 }
       - { name: helm, version: 3.14.0 }
@@ -32,4 +32,4 @@
       vars:
         sshd_allowagentforwarding: "yes"
         sshd_allowtcpforwarding: "yes"
-        sshd_allowusers: bob
+        sshd_allowusers: rei
