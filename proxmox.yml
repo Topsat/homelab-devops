@@ -2,4 +2,4 @@
 - name: Install Proxmox
   hosts: proxmoxs
   roles:
-    - role: stephrobert.proxmox
+    - role: proxmox
